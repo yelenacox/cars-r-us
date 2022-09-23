@@ -16,7 +16,7 @@ document.addEventListener(
 
 export const Paints = () => {
     return `<h2>Paints</h2>
-    <select id="paints">
+    <select id="paints" class="dropdown">
     <option value="0">Select Paint Color</option>
     ${paints.map(
         (paint) => {

@@ -1,0 +1,66 @@
+body,
+button,
+input,
+select {
+	color: #404040;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 14px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  letter-spacing: 1px;
+}
+
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 130px;
+    justify-content: space-between;
+    width: 700px;
+}
+
+#orderButton {
+    margin: 30px 0 2rem 2rem;
+    padding: .3rem .5rem;
+    background-color: #185558;
+    color: #f6f6df;
+    font-size: 1rem;
+}
+
+.options {
+    margin-right: 80px;
+    margin-top: 30px;
+    width: 220px;
+    height: 90px;
+    background-color: #f6f6df;
+    border: blue dashed 1px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-top: 0;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px rgb(138, 136, 136);
+}
+
+.dropdown {
+    margin-bottom: 15px;
+}
+
+.customOrders {
+    display: flex;
+    flex-direction: column;
+}
+
+.order {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    background-color: #F0F8FF;
+    border: blue dashed 1px;
+    padding: 15px;
+    width: 700px;
+    margin-bottom: 12px;
+}
+
+.custom {
+    margin-left: 2rem;
+}

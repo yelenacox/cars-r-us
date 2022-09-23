@@ -6,32 +6,40 @@ const buildOrderListItem = (order) => {
     const interiors = getInteriors()
     const technologies = getTechnologies()
 
-const foundPaint = paints.find(
-    (paint) => {
-        return paint.id === order.paintId
-    }
-)
-    const foundWheels = wheels.find(
-        (wheel) => {
+    const chosenPaint = paints.find(
+        paint => {
+            return paint.id === order.paintId
+        }
+    )
+
+    const chosenWheels = wheels.find(
+        wheel => {
             return wheel.id === order.wheelId
         }
     )
 
-    // Remember that the function you pass to find() must return true/false
-    const foundInterior = interiors.find(
-        (interior) => {
+    const chosenInterior = interiors.find(
+        interior => {
             return interior.id === order.interiorId
         }
     )
 
-    const foundTech = technologies.find(
-        (tech) => {
-            return tech.id === order.technologyId
+    const chosenTech = technologies.find(
+        technology => {
+            return technology.id === order.technologyId
         }
     )
 
-    return `<li>
-        Order #${order.id} was placed on ${order.timestamp}
+    const totalCost = chosenPaint.price + chosenWheels.price + chosenInterior.price + chosenTech.price 
+
+    const costString = totalCost.toLocaleString("en-US", {
+        style: "currency",
+        currency: "USD"
+    })
+
+
+    return `<li class="order">
+        ${chosenPaint.color} car with ${chosenWheels.type} wheels, ${chosenInterior.fabric} interior, and the ${chosenTech.package} for a total cost of ${costString}
     </li>`
 }
 

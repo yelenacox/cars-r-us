@@ -15,7 +15,7 @@ document.addEventListener(
 
 export const Interiors = () => {
     return `<h2>Interiors</h2>
-    <select id="interiors">
+    <select id="interiors" class="dropdown">
     <option value="0">Select Interior</option>
     ${interiors.map(
         (interior) => {
