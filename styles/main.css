@@ -20,7 +20,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #orderButton {
-    margin: 30px 0 2rem 2rem;
+    margin: 15px 0 2rem 2rem;
     padding: .3rem .5rem;
     background-color: #185558;
     color: #f6f6df;
@@ -29,7 +29,8 @@ h1,h2,h3,h4,h5,h6 {
 
 .options {
     margin-right: 80px;
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
     width: 220px;
     height: 90px;
     background-color: #f6f6df;
